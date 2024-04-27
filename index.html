@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 33</title>
+</head>
+<body>
+    <script>
+        const names = ['Dev','harshal','rutuja','adesh','pranit','rohit'];
+        const blacklist =['rutuja','rohit']
+        function sendEmail(studentName){
+            console.log(`Email sent to ${studentName}`)
+        }
+     
+        for(let i=0; i<names.length; i++)
+    {
+        const studentname = names[i]
+        
+        if(blacklist.includes(studentname))
+        {
+
+            console.log(`${studentname} is in blacklist,so email is not sent `)
+        }
+        else{
+            sendEmail(studentname) 
+        }
+    }     
+    
+    for(let i=0; i<=10; i++)
+    {
+        if(i==3)
+        {
+        console.log("this is damaged page");
+        continue;
+        }
+        console.log(i);
+    }
+    console.log("while loop is starting from now")
+    let i=0;
+    while(i<5)
+    {
+        console.log(i);
+        i++;
+    }
+    console.log("do_while loop start from now")
+    let j=0;
+    do
+    {
+        console.log(j);
+        j++
+    }
+    while(j<5);        
+    </script>
+</body>
+</html>
